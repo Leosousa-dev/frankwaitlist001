@@ -23,43 +23,42 @@ import backgoundEffect from "../assets/effect.svg";
 </html>
 
 <style>
-	@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+	@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 	html,
 	body {
 		margin: 0;
-		width: 100vw;
-		height: 100vh;
+		width: 100%;
+		/* height: 100%; */
+		box-sizing: border-box;
 		display: flex;
 		font-family: "Work Sans", sans-serif;
 		flex-direction: column;
+		background-color: #04050a;
 		color: #fdfdfd;
 	}
 
 	.wrapper {
 		position: relative;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
 		height: 100%;
-		background-color: #04050a;
 		overflow: hidden;
 	}
 
 	.effect {
 		position: absolute;
-		top: 0;
-		left: 0;
-		margin-top: -120px;
-		width: 100%;
-		height: 100%;
+		margin-top: -50px;
 		object-fit: cover;
 		z-index: 1;
 		pointer-events: none;
 	}
 
 	.slot-content {
-		position: relative; /* cria novo contexto de empilhamento */
-		z-index: 10; /* fica acima da imagem com z-index: -1 */
+		position: relative;
+		z-index: 10;
 	}
 </style>
